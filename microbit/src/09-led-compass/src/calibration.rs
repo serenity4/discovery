@@ -22,6 +22,8 @@ pub struct Calibration {
     radius: u32,
 }
 
+pub const CALIBRATED_VALUE: Calibration = Calibration { center: Measurement { x: -7932, y: -4710, z: 38996 }, scale: Measurement { x: 1118, y: 1070, z: 1138 }, radius: 78535 };
+
 impl Default for Calibration {
     fn default() -> Calibration {
         Calibration {
